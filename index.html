@@ -9,12 +9,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Anton+SC&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
-    <header class="pt-2.5 pb-2.5 flex items-center justify-between flex-col lg:flex-row border-2 w-full">
-        <a href="#" class="flex items-center font-semibold text-black">
-            <div class="flex items-center justify-center text-[32px] h-16 w-16">
+    <header class="py-2.5 flex items-center justify-between flex-col lg:flex-row border-2 w-full">
+        <a href="#" class="flex items-center font-semibold text-black mr-5">
+            <div class="flex items-center justify-center text-[32px] h-16 w-16 text-9xl">
                 &#127828;
             </div>
             <div class="flex-1">Chrome & Burger</div>
@@ -31,7 +32,7 @@
                 </li>
                 <li>
                     <a href="#menu-burgers"
-                        class="inline-block px-[30px] py-[10px] bg-[#0A61AE] text-[#F1F1F1] rounded-[10px] transition ease-in-out duration-300 hover:bg-black active:bg-red-500 w-full md:w-auto no-underline mr-4">Order
+                        class="inline-block px-5 text-[#555] py-[10px] rounded-[10px] transition ease-in-out duration-300 hover:bg-black active:bg-red-500 w-full md:w-auto no-underline mr-4 md:bg-blue-300 md:text-[#ffffff]">Order
                         Now</a>
                 </li>
             </ul>
@@ -43,10 +44,10 @@
         </nav>
     </header>
     <main>
-        <section class="flex justify-center mt-3 p-10">
-            <div class="p-5 mr-10 rounded-3xl bg-sky-200">
-                <h1 class="text-4xl font-Anton">Chrome & Burger</h1>
-                <p class="font-Anton">
+        <section class="flex justify-center pt-10 flex-col px-10 md:flex-row lg:px-60">
+            <div class="p-5 rounded-3xl bg-sky-200 flex-grow overflow-hidden flex flex-col md:ml-10">
+                <h1 class="text-4xl font-Anton md:text-2xl lg:text-4xl">Chrome & Burger</h1>
+                <p class="font-Anton lg:text-base">
                     Feeling famished after conquering those waves? Look no further than
                     Chrome & Burger, your one-stop shop for gourmet grub that's as
                     classic as a beach sunset and as shiny as a chrome fender!
@@ -55,11 +56,11 @@
                     <a href="./menu.pdf" target="_blank" class="bg-blue-500 w-20 px-5 py-3 rounded-xl text-white">Full Menu</a>
                 </div>
             </div>
-            <div>
-                <img src="./images/BurgerTruck.jpeg" alt="Burger Truck" class="md:auto rounded-3xl"/>
+            <div class="mt-5 md:mt-0 md:mx-10 flex-grow">
+                <img src="./images/BurgerTruck.jpeg" alt="Burger Truck" class="w-full h-full rounded-3xl object-cover"/>
             </div>
-            <!-- </section>
-        <section id="menu-burgers">
+        </section>
+        <!-- <section id="menu-burgers">
             <h2>100% Organic Burgers</h2>
             <div>
                 <article>
